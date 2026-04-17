@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CallToAction from "@/components/ui/CallToAction";
 
 export const revalidate = 60; // ISR: re-render every 60 seconds (rates change frequently)
 
@@ -12,6 +13,7 @@ export default function RatesPage() {
   return (
     <main>
       <h1>Gift Card Rates</h1>
+      <CallToAction />
     </main>
   );
 }

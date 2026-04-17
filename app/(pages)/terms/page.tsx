@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CallToAction from "@/components/ui/CallToAction";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions",
@@ -10,6 +11,7 @@ export default function TermsPage() {
   return (
     <main>
       <h1>Terms and Conditions</h1>
+      <CallToAction />
     </main>
   );
 }

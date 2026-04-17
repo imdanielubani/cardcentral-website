@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import CallToAction from "@/components/ui/CallToAction";
 
 export const metadata: Metadata = {
   title: "Download the App",
@@ -80,6 +81,7 @@ export default function DownloadPage() {
 
         </div>
       </div>
+      <CallToAction />
     </main>
   );
 }

@@ -25,7 +25,7 @@ export default function Navbar() {
      * pointer-events-none on the gap so it doesn't block page interactions
      */
     <header
-      className="sticky top-0 z-50 w-full flex justify-center pointer-events-none bg-white"
+      className="sticky top-0 z-50 w-full flex justify-center pointer-events-none bg-none"
       style={{ paddingTop: 30 }}
     >
       {/*

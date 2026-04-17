@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CallToAction from "@/components/ui/CallToAction";
 
 export const revalidate = 3600; // ISR: re-render at most once per hour
 
@@ -12,6 +13,7 @@ export default function BlogPage() {
   return (
     <main>
       <h1>Blog</h1>
+      <CallToAction />
     </main>
   );
 }

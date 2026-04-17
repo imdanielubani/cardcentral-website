@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CallToAction from "@/components/ui/CallToAction";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -10,6 +11,7 @@ export default function FaqPage() {
   return (
     <main>
       <h1>Frequently Asked Questions</h1>
+      <CallToAction />
     </main>
   );
 }

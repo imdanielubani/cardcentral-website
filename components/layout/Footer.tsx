@@ -54,7 +54,7 @@ export default function Footer() {
         <div className="relative bg-[#191919] rounded-[25px] overflow-hidden">
 
           {/* Background decoration — opacity-10 as per Figma */}
-          <div className="absolute inset-0 overflow-hidden opacity-10 pointer-events-none">
+          <div className="absolute inset-0 overflow-hidden opacity-100 pointer-events-none">
             <img
               alt=""
               src="/images/shapeimagefooter.png"
@@ -111,7 +111,7 @@ export default function Footer() {
                     paddingRight: 16,
                   }}
                 >
-                  <span className="font-semibold text-[14px] sm:text-[15px] leading-none text-white whitespace-nowrap">
+                  <span className="font-semibold text-[14px] sm:text-[15px] leading-none text-white whitespace-nowrap ">
                     support@cardcentrals.com
                   </span>
                   <ArrowIcon src="/icons/arrowup.png" />
@@ -120,7 +120,7 @@ export default function Footer() {
                 <a
                   href="tel:+2348108993922"
                   className="flex items-center justify-center gap-[3.85px] overflow-hidden
-                             w-full bg-white border-2 border-[#e5e5e5] rounded-[15px]
+                             w-full bg-white border-5 border-[#e5e5e5] rounded-[15px]
                              hover:opacity-80 transition-opacity"
                   style={{
                     paddingTop: 6.857,
@@ -190,9 +190,9 @@ export default function Footer() {
                   <a
                     href="#"
                     className="relative flex items-center w-full bg-[#0159c7] rounded-[15px] hover:opacity-90 transition-opacity shrink-0"
-                    style={{ height: 53.59, border: "5px solid rgba(18,108,248,0.5)" }}
+                    style={{ height: 60, border: "5px solid rgba(18,108,248,0.5)" }}
                   >
-                    <div className="absolute size-[20px]" style={{ left: 22.5, top: 12.5 }}>
+                    <div className="absolute size-[20px]" style={{ left: 22.5, top: 17 }}>
                       <Image
                         src="/icons/google-play.png"
                         alt=""
@@ -202,7 +202,7 @@ export default function Footer() {
                         priority
                       />
                     </div>
-                    <div className="absolute flex flex-col items-start" style={{ left: 55.5, top: 2.5 }}>
+                    <div className="absolute flex flex-col items-start" style={{ left: 55.5, top: 5 }}>
                       <p className="font-medium text-[12px] leading-[20px] text-white whitespace-nowrap">
                         Download on
                       </p>
@@ -215,12 +215,12 @@ export default function Footer() {
                   {/* Apple Play */}
                   <a
                     href="#"
-                    className="relative flex items-center w-full bg-white border-[1.5px] border-[#e5e5e5] rounded-[15px] hover:bg-gray-50 transition-colors shrink-0"
-                    style={{ height: 54 }}
+                    className="relative flex items-center w-full bg-white border-[5px] border-[#e5e5e5] rounded-[15px] hover:bg-gray-50 transition-colors shrink-0"
+                    style={{ height: 60 }}
                   >
                     <div
                       className="absolute flex gap-[13px] items-center"
-                      style={{ left: 23.64, top: 3.5 }}
+                      style={{ left: 23.64, top: 5 }}
                     >
                       <div className="relative shrink-0 size-[20px]">
                         <Image
