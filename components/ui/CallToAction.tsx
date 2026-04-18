@@ -31,7 +31,7 @@ export default function CallToAction() {
         <div className="hidden xl:block absolute inset-0">
 
           {/* CTA Content: left-[91px] top-[95px] */}
-          <div className="absolute flex flex-col gap-[12px] items-start" style={{ left: 91, top: 95 }}>
+          <div className="absolute flex flex-col gap-[24px] items-start" style={{ left: 91, top: 95 }}>
 
             {/* Heading */}
             <div className="flex flex-col" style={{ fontSize: 48, lineHeight: "58px" }}>
@@ -147,13 +147,13 @@ export default function CallToAction() {
                 <Image src="/icons/google-play.png" alt="" fill sizes="20px" className="object-contain" />
               </div>
               <div className="absolute flex flex-col items-start" style={{ left: 55.5, top: 5 }}>
-                <p className="font-medium text-[12px] leading-[20px] text-white whitespace-nowrap">Download on</p>
-                <p className="font-bold text-[16px] leading-[20px] text-white whitespace-nowrap">Google Play</p>
+                <p className="font-medium text-[12px] leading-[18px] text-white whitespace-nowrap">Download on</p>
+                <p className="font-bold text-[16px] leading-[18px] text-white whitespace-nowrap">Google Play</p>
               </div>
             </a>
             <a
               href="#"
-              className="relative flex items-center bg-white border-[1.5px] border-[#e5e5e5] rounded-[15px] hover:bg-gray-50 transition-colors"
+              className="relative flex items-center bg-white border-[5px] border-[#e5e5e5] rounded-[15px] hover:bg-gray-50 transition-colors"
               style={{ width: 176.86, height: 53.59 }}
             >
               <div
@@ -164,8 +164,8 @@ export default function CallToAction() {
                   <Image src="/icons/apple-logo.png" alt="Apple" fill sizes="20px" className="object-contain" />
                 </div>
                 <div className="flex flex-col items-start">
-                  <p className="font-medium text-[12px] leading-[20px] text-[#191919] whitespace-nowrap">Download on</p>
-                  <p className="font-bold text-[16px] leading-[20px] text-[#191919] whitespace-nowrap">Apple Play</p>
+                  <p className="font-medium text-[12px] leading-[18px] text-[#191919] whitespace-nowrap">Download on</p>
+                  <p className="font-bold text-[16px] leading-[18px] text-[#191919] whitespace-nowrap">Apple Play</p>
                 </div>
               </div>
             </a>

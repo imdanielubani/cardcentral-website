@@ -5,7 +5,8 @@ export const SITE = {
     "Cardcentrals is the fast, secure, and trusted platform to sell your gift cards at the best rates in Nigeria.",
   url: "https://cardcentrals.com",
   email: "support@cardcentrals.com",
-  phone: "+234 000 000 0000",
+  phone: "+2348108993922",
+  phoneDisplay: "+ (234) 810-899-3922",
   social: {
     twitter: "https://twitter.com/cardcentrals",
     instagram: "https://instagram.com/cardcentrals",

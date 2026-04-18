@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ROUTES } from "@/constants/routes";
+import { ROUTES } from "@/lib/routes";
 
 // Nav links exactly as shown in Figma node 349:2073 "Nav - Menu Items"
 const NAV_LINKS = [

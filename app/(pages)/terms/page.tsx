@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CallToAction from "@/components/ui/CallToAction";
+import TermsContent from "@/components/ui/TermsContent";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions",
@@ -10,8 +11,75 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <main>
-      <h1>Terms and Conditions</h1>
+
+      {/* ── Hero Section ──────────────────────────────────────────────────────── */}
+      <section
+        className="relative overflow-hidden"
+        style={{
+          marginTop: -95,
+          backgroundImage:
+            "linear-gradient(-32.42deg, rgb(255,255,255) 60%, rgba(166,201,255,0.15) 100%)",
+        }}
+      >
+
+        {/* Dot grid overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: "url('/images/herobgsection.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "left top",
+            backgroundRepeat: "no-repeat",
+            mixBlendMode: "multiply",
+            opacity: 0.1,
+          }}
+        />
+
+        {/* Hero content */}
+        <div className="relative flex flex-col items-center text-center px-5 pt-[130px] sm:pt-[150px] md:pt-[170px] xl:pt-[220px] pb-[60px] sm:pb-[80px] xl:pb-[100px] gap-[14px] sm:gap-[16px]">
+
+          {/* Badge */}
+          <div
+            className="animate-fade-up flex items-center justify-center h-[34px] sm:h-[38px] px-[15px] sm:px-[17px] rounded-full border-2"
+            style={{
+              background: "linear-gradient(to right, rgba(1,89,199,0.1), rgba(18,108,248,0.1))",
+              borderColor: "rgba(1,89,199,0.2)",
+            }}
+          >
+            <span className="font-semibold text-[12px] sm:text-[13px] text-[#126cf8] tracking-[0.26px] leading-[19.5px]">
+              TERMS &amp; CONDITIONS
+            </span>
+          </div>
+
+          {/* Heading */}
+          <h1 className="animate-fade-up anim-delay-100 font-extrabold text-[#191919] text-[28px] sm:text-[42px] md:text-[52px] xl:text-[60px] leading-[1.1]">
+            Terms and Conditions
+          </h1>
+
+          {/* Last updated */}
+          <p className="animate-fade-up anim-delay-200 font-bold text-[#525252] text-[15px] sm:text-[18px]" style={{ lineHeight: "27.2px" }}>
+            Last Updated: 12th April, 2026.
+          </p>
+
+          {/* Intro */}
+          <p
+            className="animate-fade-up anim-delay-300 font-medium text-[#525252] text-[15px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[700px] xl:max-w-[860px]"
+            style={{ lineHeight: "1.7" }}
+          >
+            Welcome to CardCentrals. These Terms and Conditions govern your use of our website
+            and mobile application. By accessing or using our platform, you agree to comply with
+            and be bound by these terms.
+          </p>
+
+        </div>
+      </section>
+
+      {/* ── Terms Content ─────────────────────────────────────────────────────── */}
+      <TermsContent />
+
+      {/* ── CTA ───────────────────────────────────────────────────────────────── */}
       <CallToAction />
+
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ROUTES } from "@/constants/routes";
+import { ROUTES } from "@/lib/routes";
+import { SITE } from "@/lib/site";
 
 /* ─── data ─────────────────────────────────────────────────────────────────── */
 
@@ -9,10 +10,10 @@ const QUICK_LINKS = [
   { label: "About Us", href: ROUTES.ABOUT   },
   { label: "Rate",     href: ROUTES.RATES   },
   { label: "Blogs",    href: ROUTES.BLOG    },
+  { label: "Contact Us",         href: ROUTES.CONTACT },
 ] as const;
 
 const INFO_LINKS = [
-  { label: "Contact Us",         href: ROUTES.CONTACT },
   { label: "FAQs",               href: ROUTES.FAQ     },
   { label: "Help Center",        href: "#"            },
   { label: "Privacy Policy",     href: ROUTES.PRIVACY },
@@ -99,7 +100,7 @@ export default function Footer() {
               <div className="flex flex-col gap-[12px] w-full sm:max-w-[345px]">
 
                 <a
-                  href="mailto:support@cardcentrals.com"
+                  href={`mailto:${SITE.email}`}
                   className="flex items-center justify-center gap-[3.86px] overflow-hidden
                              w-full bg-[#0159c7] rounded-[15px]
                              hover:opacity-90 transition-opacity"
@@ -112,13 +113,13 @@ export default function Footer() {
                   }}
                 >
                   <span className="font-semibold text-[14px] sm:text-[15px] leading-none text-white whitespace-nowrap ">
-                    support@cardcentrals.com
+                    {SITE.email}
                   </span>
                   <ArrowIcon src="/icons/arrowup.png" />
                 </a>
 
                 <a
-                  href="tel:+2348108993922"
+                  href={`tel:${SITE.phone}`}
                   className="flex items-center justify-center gap-[3.85px] overflow-hidden
                              w-full bg-white border-5 border-[#e5e5e5] rounded-[15px]
                              hover:opacity-80 transition-opacity"
@@ -130,7 +131,7 @@ export default function Footer() {
                   }}
                 >
                   <span className="font-semibold text-[14px] sm:text-[15px] leading-none text-[#191919] whitespace-nowrap opacity-70">
-                    + (234) 810-899-3922
+                    {SITE.phoneDisplay}
                   </span>
                   <ArrowIcon src="/icons/arrowups.png" />
                 </a>
@@ -142,7 +143,7 @@ export default function Footer() {
                 Mobile:  2-column grid
                 Tablet:  4-column grid (md)
                 Desktop: flex row with Figma gap-[100px] + ml-[109px]       */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 xl:flex xl:gap-[100px] xl:ml-[109px]">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 xl:flex xl:gap-[120px] xl:ml-[109px]">
 
               {/* Quick Link */}
               <div className="flex flex-col gap-[24px] items-start">
@@ -184,7 +185,7 @@ export default function Footer() {
               <div className="flex flex-col gap-[28px] items-start col-span-2 md:col-span-1 xl:w-[177px] xl:shrink-0">
                 <h6 className={headingCls}>Download Our App</h6>
 
-                <div className="flex flex-col gap-[10px] w-full max-w-[220px] xl:max-w-none xl:w-full">
+                <div className="flex flex-col gap-[10px] w-full max-w-[180px] xl:max-w-none xl:w-full">
 
                   {/* Google Play */}
                   <a
@@ -202,11 +203,11 @@ export default function Footer() {
                         priority
                       />
                     </div>
-                    <div className="absolute flex flex-col items-start" style={{ left: 55.5, top: 5 }}>
-                      <p className="font-medium text-[12px] leading-[20px] text-white whitespace-nowrap">
+                    <div className="absolute flex flex-col items-start" style={{ left: 55.5, top: 7 }}>
+                      <p className="font-medium text-[12px] leading-[18px] text-white whitespace-nowrap">
                         Download on
                       </p>
-                      <p className="font-bold text-[16px] leading-[20px] text-white whitespace-nowrap">
+                      <p className="font-bold text-[16px] leading-[18px] text-white whitespace-nowrap">
                         Google Play
                       </p>
                     </div>
@@ -220,7 +221,7 @@ export default function Footer() {
                   >
                     <div
                       className="absolute flex gap-[13px] items-center"
-                      style={{ left: 23.64, top: 5 }}
+                      style={{ left: 30, top: 5 }}
                     >
                       <div className="relative shrink-0 size-[20px]">
                         <Image
@@ -233,10 +234,10 @@ export default function Footer() {
                         />
                       </div>
                       <div className="flex flex-col items-start">
-                        <p className="font-medium text-[12px] leading-[20px] text-[#191919] whitespace-nowrap">
+                        <p className="font-medium text-[12px] leading-[18px] text-[#191919] whitespace-nowrap">
                           Download on
                         </p>
-                        <p className="font-bold text-[16px] leading-[20px] text-[#191919] whitespace-nowrap">
+                        <p className="font-bold text-[16px] leading-[18px] text-[#191919] whitespace-nowrap">
                           Apple Play
                         </p>
                       </div>
