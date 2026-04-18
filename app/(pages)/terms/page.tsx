@@ -31,12 +31,12 @@ export default function TermsPage() {
             backgroundPosition: "left top",
             backgroundRepeat: "no-repeat",
             mixBlendMode: "multiply",
-            opacity: 0.1,
+            opacity: 100,
           }}
         />
 
         {/* Hero content */}
-        <div className="relative flex flex-col items-center text-center px-5 pt-[130px] sm:pt-[150px] md:pt-[170px] xl:pt-[220px] pb-[60px] sm:pb-[80px] xl:pb-[100px] gap-[14px] sm:gap-[16px]">
+        <div className="relative flex flex-col items-center text-center px-5 pt-[190px] sm:pt-[150px] md:pt-[170px] xl:pt-[250px] gap-[14px] sm:gap-[18px]">
 
           {/* Badge */}
           <div
@@ -63,10 +63,10 @@ export default function TermsPage() {
 
           {/* Intro */}
           <p
-            className="animate-fade-up anim-delay-300 font-medium text-[#525252] text-[15px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[700px] xl:max-w-[860px]"
+            className="animate-fade-up anim-delay-300 font-medium text-[#525252] text-[15px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[700px] xl:max-w-[900px]"
             style={{ lineHeight: "1.7" }}
           >
-            Welcome to CardCentrals. These Terms and Conditions govern your use of our website
+            Welcome to Cardcentrals. These Terms and Conditions govern your use of our website
             and mobile application. By accessing or using our platform, you agree to comply with
             and be bound by these terms.
           </p>

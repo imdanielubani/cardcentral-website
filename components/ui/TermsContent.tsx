@@ -7,7 +7,7 @@ const SECTIONS = [
     heading: "Acceptance of Terms",
     content: (
       <>
-        <p>By using CardCentrals, you confirm that you:</p>
+        <p>By using Cardcentrals, you confirm that you:</p>
         <ul>
           <li>Are at least 18 years old</li>
           <li>Agree to abide by these Terms and Conditions</li>
@@ -41,7 +41,7 @@ const SECTIONS = [
           <li>The card is valid, unused, and legally obtained</li>
           <li>All details provided are accurate</li>
         </ul>
-        <p>CardCentrals reserves the right to:</p>
+        <p>Cardcentrals reserves the right to:</p>
         <ul>
           <li>Reject invalid or suspicious transactions</li>
           <li>Verify gift card authenticity before processing</li>
@@ -57,7 +57,7 @@ const SECTIONS = [
         <li>Gift card rates are subject to change at any time</li>
         <li>The applicable rate is the one shown at the time of transaction</li>
         <li>Payments are processed after successful verification</li>
-        <li>CardCentrals is not responsible for delays caused by incorrect user details</li>
+        <li>Cardcentrals is not responsible for delays caused by incorrect user details</li>
       </ul>
     ),
   },
@@ -97,7 +97,7 @@ const SECTIONS = [
     heading: "Limitation of Liability",
     content: (
       <>
-        <p>CardCentrals shall not be held liable for:</p>
+        <p>Cardcentrals shall not be held liable for:</p>
         <ul>
           <li>Losses resulting from invalid or fraudulent gift cards</li>
           <li>Delays caused by third-party services</li>
@@ -152,7 +152,7 @@ const SECTIONS = [
       <>
         <p>If you have any questions about these Terms, please contact us:</p>
         <ul>
-          <li>Email: support@cardcentrals.com</li>
+          <li>Email: support@Cardcentrals.com</li>
           <li>WhatsApp: +(234) 810-899-3922</li>
         </ul>
       </>
