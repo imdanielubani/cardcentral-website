@@ -23,7 +23,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Fintech entrance animations ──────────────────────────────────────────── */
 
 @keyframes fadeUp {
   from {
@@ -49,7 +48,7 @@ body {
   animation: fadeIn 0.5s ease both;
 }
 
-/* Stagger helpers */
+
 .anim-delay-100 { animation-delay: 0.1s; }
 .anim-delay-200 { animation-delay: 0.2s; }
 .anim-delay-300 { animation-delay: 0.3s; }
@@ -80,7 +79,7 @@ body {
   animation: floatMockup 5s ease-in-out infinite;
 }
 
-/* Scroll-triggered reveal */
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -92,4 +91,59 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* ── Blog Detail Animations ── */
+@keyframes blogImageReveal {
+  from { opacity: 0; transform: scale(0.97) translateY(12px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);    }
+}
+
+.blog-image-reveal {
+  animation: blogImageReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.25s;
+}
+
+@keyframes cardGlow {
+  0%,100% { box-shadow: 0 8px 40px rgba(1, 89, 199, 0.07); }
+  50%     { box-shadow: 0 8px 60px rgba(18,108,248, 0.2);  }
+}
+
+.card-glow-anim {
+  animation: cardGlow 4s ease-in-out infinite;
+}
+
+@keyframes shimmerSweep {
+  0%   { transform: translateX(-120%); }
+  100% { transform: translateX(120%);  }
+}
+
+.shimmer-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255,255,255,0.14) 50%,
+    transparent 70%
+  );
+  animation: shimmerSweep 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes heroPulse {
+  0%,100% { opacity: 0.12; }
+  50%     { opacity: 0.22; }
+}
+
+.hero-pulse {
+  animation: heroPulse 6s ease-in-out infinite;
+}
+
 

@@ -8,14 +8,14 @@ import { SITE } from "@/lib/site";
 const QUICK_LINKS = [
   { label: "Home",     href: ROUTES.HOME    },
   { label: "About Us", href: ROUTES.ABOUT   },
-  { label: "Rate",     href: ROUTES.RATES   },
+  // { label: "Rate",     href: ROUTES.RATES   },
   { label: "Blogs",    href: ROUTES.BLOG    },
   { label: "Contact Us",         href: ROUTES.CONTACT },
 ] as const;
 
 const INFO_LINKS = [
   { label: "FAQs",               href: ROUTES.FAQ     },
-  { label: "Help Center",        href: "#"            },
+  // { label: "Help Center",        href: "#"            },
   { label: "Privacy Policy",     href: ROUTES.PRIVACY },
   { label: "Terms & Conditions", href: ROUTES.TERMS   },
   { label: "Download",           href: ROUTES.DOWNLOAD },

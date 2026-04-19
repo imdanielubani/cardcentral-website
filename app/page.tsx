@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import CallToAction from "@/components/ui/CallToAction";
+import HomeClient from "./HomeClient";
 
-export const revalidate = 3600; // ISR: re-render at most once per hour
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Cardcentrals | Sell Your Gift Cards Instantly",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main>
-      {/* Other page sections will go here */}
+      <HomeClient />
       <CallToAction />
     </main>
   );

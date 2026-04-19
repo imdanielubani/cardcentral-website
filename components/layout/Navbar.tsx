@@ -10,7 +10,7 @@ import { ROUTES } from "@/lib/routes";
 const NAV_LINKS = [
   { label: "Home",       href: ROUTES.HOME    },
   { label: "About Us",   href: ROUTES.ABOUT   },
-  { label: "Rate",       href: ROUTES.RATES   },
+  { label: "Faqs",               href: ROUTES.FAQ     },
   { label: "Blogs",      href: ROUTES.BLOG    },
   { label: "Contact Us", href: ROUTES.CONTACT },
 ] as const;
