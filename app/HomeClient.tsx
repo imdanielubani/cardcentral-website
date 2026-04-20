@@ -64,7 +64,7 @@ const STATS = [
 const STEPS = [
   {
     title: "Get Started",
-    desc: "Download the CardCentrals app and begin your journey in just a few taps.",
+    desc: "Download the Cardcentrals app and begin your journey in just a few taps.",
     img: "/images/login.png",
   },
   {
@@ -102,7 +102,7 @@ interface Review {
 const COL1: Review[] = [
   {
     name: "Daniel Chukwuemeka", location: "Nigeria",
-    quote: "I've tried several platforms, but CardCentrals is by far the fastest. Got paid within minutes!",
+    quote: "I've tried several platforms, but Cardcentrals is by far the fastest. Got paid within minutes!",
     bg: "#f3f3f4",
   },
   {
@@ -281,10 +281,10 @@ export default function HomeClient() {
           }}
         />
 
-        <div className="relative max-w-[1440px] mx-auto px-5 sm:px-8 xl:px-[100px]">
+        <div className="relative max-w-[1440px] mx-auto px-5 sm:px-8 xl:px-[130px]">
 
           {/* ── Badge ── */}
-          <div className="pt-[160px] sm:pt-[160px] xl:pt-[220px]">
+          <div className="pt-[190px] sm:pt-[190px] xl:pt-[250px]">
             <div
               className="animate-fade-up inline-flex items-center gap-[8px] h-[37px] px-[16px] rounded-full border w-fit"
               style={{
@@ -301,8 +301,8 @@ export default function HomeClient() {
 
           {/* ── H1 heading (shared mobile + desktop) ── */}
           <h1
-            className="animate-fade-up anim-delay-100 font-extrabold text-[#191919] uppercase leading-[0.95] tracking-[-0.02em] mt-[18px] sm:mt-[20px]"
-            style={{ fontSize: "clamp(38px, 7.5vw, 108px)" }}
+            className="animate-fade-up anim-delay-100 font-extrabold text-[#191919] uppercase leading-[0.95] tracking-[-0.02em] mt-[18px] sm:mt-[20px] xl:mt-[10px]"
+            style={{ fontSize: "clamp(36px, 7.5vw, 108px)" }}
           >
             Sell Your Gift Cards
           </h1>
@@ -310,37 +310,17 @@ export default function HomeClient() {
           {/* ── Mobile / Tablet (< xl): stacked ── */}
           <div className="xl:hidden">
             <h1
-              className="font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right mt-[4px]"
+              className="animate-fade-up font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right mt-[4px]"
               style={{
-                fontSize: "clamp(38px, 7.5vw, 108px)",
+                fontSize: "clamp(36px, 7.5vw, 108px)",
                 backgroundImage: "linear-gradient(90deg, #0159c7 0%, #3c8eff 100%)",
               }}
             >
               Instantly
             </h1>
 
-            <div className="flex flex-col items-center gap-[24px] sm:gap-[28px] mt-[28px] pb-[60px] sm:pb-[80px]">
-              {/* Phone */}
-              <div className="relative w-full max-w-[380px] sm:max-w-[460px]">
-                <div className="relative w-full aspect-[585/756]">
-                  <Image
-                    src="/images/Hero 1.png"
-                    alt="Cardcentrals app"
-                    fill
-                    priority
-                    sizes="(max-width:640px) 90vw, 460px"
-                    className="object-contain"
-                  />
-                </div>
-                {/* Card 2 — Payment Sent (tablet only) */}
-                <div className="hidden sm:block absolute left-[-10px] top-[18%]">
-                  <Image src="/images/Card 2.png" alt="Payment Sent" width={175} height={66} className="object-contain" />
-                </div>
-                {/* Card 1 — iTunes rate (tablet only) */}
-                <div className="hidden sm:block absolute right-[-10px] bottom-[28%]">
-                  <Image src="/images/Card 1.png" alt="iTunes rate up" width={160} height={40} className="object-contain" />
-                </div>
-              </div>
+            <div className="flex flex-col items-center gap-[24px] sm:gap-[28px] mt-[28px] pb-[0px] sm:pb-[0px]">
+              
 
               {/* Description */}
               <p className="animate-fade-up anim-delay-200 font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.8] text-center max-w-[520px]">
@@ -364,59 +344,84 @@ export default function HomeClient() {
                 ))}
               </div>
 
+
               {/* Download buttons */}
               <div className="animate-fade-up anim-delay-400 flex flex-wrap justify-center gap-[12px]">
-                <button type="button" className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] active:scale-95 transition-all duration-200" style={{ background: "#0159c7", border: "2.5px solid rgba(18,108,248,0.5)" }}>
+                <a href="#" className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] active:scale-95 transition-all duration-200" style={{ background: "#0159c7", border: "2.5px solid rgba(18,108,248,0.5)" }}>
                   <Image src="/icons/google-play.png" alt="Google Play" width={20} height={20} className="object-contain shrink-0" />
                   <div className="flex flex-col items-start">
                     <span className="font-medium text-[12px] text-white leading-[1.4]">Download on</span>
                     <span className="font-bold text-[16px] text-white leading-[1.3]">Google Play</span>
                   </div>
-                </button>
-                <button type="button" className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] border border-[#e5e5e5] bg-white active:scale-95 transition-all duration-200">
+                </a>
+                <a href="#" className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] border border-[#e5e5e5] bg-white active:scale-95 transition-all duration-200">
                   <Image src="/icons/apple-logo.png" alt="App Store" width={20} height={20} className="object-contain shrink-0" />
                   <div className="flex flex-col items-start">
                     <span className="font-medium text-[12px] text-[#191919] leading-[1.4]">Download on</span>
                     <span className="font-bold text-[16px] text-[#191919] leading-[1.3]">Apple Store</span>
                   </div>
-                </button>
+                </a>
               </div>
+
+              {/* Phone */}
+              <div className="relative w-full max-w-[380px] sm:max-w-[460px]">
+                <div className="relative w-full aspect-[585/756]">
+                  <Image
+                    src="/images/Hero1.png"
+                    alt="Cardcentrals app"
+                    fill
+                    priority
+                    sizes="(max-width:640px) 90vw, 460px"
+                    className="object-contain"
+                  />
+                </div>
+                {/* Card 2 — Payment Sent (tablet only) */}
+                <div className="hidden sm:block absolute left-[-10px] top-[18%]">
+                  <Image src="/images/Card 2.png" alt="Payment Sent" width={175} height={66} className="object-contain" />
+                </div>
+                {/* Card 1 — iTunes rate (tablet only) */}
+                <div className="hidden sm:block absolute right-[-10px] bottom-[28%]">
+                  <Image src="/images/Card 1.png" alt="iTunes rate up" width={160} height={40} className="object-contain" />
+                </div>
+              </div>
+
+
             </div>
           </div>
 
           {/* ── Desktop (xl+) ── */}
           <div className="hidden xl:block">
 
-            {/* Row: subtitle (left ~49%) + INSTANTLY (right flex-1) */}
-            <div className="flex items-start gap-[40px] mt-[22px]">
+            {/* Row: subtitle (left 49%) + INSTANTLY (right flex-1) — same row, tight mt */}
+            <div className="flex items-start gap-[40px] mt-[25px]">
               {/* Left: subtitle + pills */}
-              <div className="flex flex-col gap-[20px]" style={{ width: "49%" }}>
-                <p className="font-normal text-[#525252] text-[16px] leading-[1.8]">
-                  Turn your unused gift cards into cash in minutes. Safe, secure, and trusted by hundreds of users.
+              <div className="animate-fade-up flex flex-col gap-[20px] w-[49%] shrink-0">
+                <p className="font-normal text-[#525252] text-[16px] leading-[1.75]">
+                  Turn your unused gift cards into cash in minutes.&nbsp; Safe, secure, and trusted by hundreds of users.
                 </p>
+                {/* Pills — icon box has border, no outer pill border */}
                 <div className="flex flex-wrap gap-[10px]">
                   {[
                     { icon: "/icons/sli1.png", label: "Fast Payments" },
                     { icon: "/icons/sli2.png", label: "Best Market Rates" },
                     { icon: "/icons/sli3.png", label: "100% Secure Transactions" },
                   ].map((f) => (
-                    <div
-                      key={f.label}
-                      className="flex items-center gap-[5px] h-[32px] px-[10px] rounded-[12px] border border-[#e5e5e5] bg-[rgba(255,255,255,0.04)]"
-                    >
-                      <Image src={f.icon} alt={f.label} width={16} height={16} className="object-contain shrink-0" />
+                    <div key={f.label} className="flex items-center gap-[5px] h-[32px]">
+                      <div className="flex items-center justify-center shrink-0 size-[32px] rounded-[12px] border-[1.5px] border-[#e5e5e5] bg-[rgba(255,255,255,0.04)]">
+                        <Image src={f.icon} alt="" width={16} height={16} className="object-contain" />
+                      </div>
                       <span className="font-medium text-[13px] text-[#191919] whitespace-nowrap">{f.label}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Right: INSTANTLY */}
+              {/* Right: INSTANTLY — blue gradient, right-aligned */}
               <div className="flex-1 flex justify-end">
                 <h1
-                  className="font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right"
+                  className="animate-fade-up font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right"
                   style={{
-                    fontSize: "clamp(38px, 7.5vw, 108px)",
+                    fontSize: "clamp(36px, 7.5vw, 108px)",
                     backgroundImage: "linear-gradient(90deg, #0159c7 0%, #3c8eff 100%)",
                   }}
                 >
@@ -425,13 +430,13 @@ export default function HomeClient() {
               </div>
             </div>
 
-            {/* Phone section: all elements absolutely positioned */}
-            <div className="relative mt-[32px]" style={{ minHeight: 836 }}>
+            {/* Phone section — all elements absolutely positioned, tight mt */}
+            <div className="relative mt-[100px]" style={{ minHeight: 700 }}>
 
-              {/* Phone image */}
-              <div className="absolute" style={{ left: 284, top: 0, width: 585, height: 756 }}>
+              {/* Phone image — at 22.9% from content left (284/1240) */}
+              <div className="absolute" style={{ left: "22.9%", top: 0, width: 585, height: 756 }}>
                 <Image
-                  src="/images/Hero 1.png"
+                  src="/images/Hero1.png"
                   alt="Cardcentrals app"
                   fill
                   priority
@@ -440,37 +445,37 @@ export default function HomeClient() {
                 />
               </div>
 
-              {/* Card 2 — Payment Sent (white card, left of phone) */}
-              <div className="absolute" style={{ left: 240, top: 127 }}>
+              {/* Card 2 — Payment Sent (44px left of phone) */}
+              <div className="absolute" style={{ left: "calc(22.9% - 44px)", top: 127 }}>
                 <Image src="/images/Card 2.png" alt="Payment Sent" width={191} height={72} className="object-contain" />
               </div>
 
-              {/* Card 1 — iTunes rate (dark card, right side of phone) */}
-              <div className="absolute" style={{ left: 646, top: 399 }}>
+              {/* Card 1 — iTunes rate (362px right of phone left edge) */}
+              <div className="absolute" style={{ left: "calc(22.9% + 362px)", top: 399 }}>
                 <Image src="/images/Card 1.png" alt="iTunes rate up" width={175} height={44} className="object-contain" />
               </div>
 
-              {/* Description + download buttons (right side) */}
-              <div className="absolute right-0 top-0 flex flex-col gap-[24px]" style={{ width: 409 }}>
+              {/* Description + download buttons — right side, aligned with phone top */}
+              <div className="animate-fade-up absolute right-0 top-0 flex flex-col gap-[24px]" style={{ width: "33%" }}>
                 <p className="font-medium text-[#525252] text-[16px] leading-[1.7]">
                   Turn your gift cards into instant cash at unbeatable rates.{" "}
-                  Download the CardCentrals app and start earning now.
+                  Download the Cardcentrals app and start earning now.
                 </p>
                 <div className="flex gap-[13px]">
-                  <button type="button" className="flex items-center gap-[13px] h-[54px] px-[18px] rounded-[15px] active:scale-95 transition-all duration-200" style={{ background: "#0159c7", border: "2.5px solid rgba(18,108,248,0.5)" }}>
+                  <a href="#" className="flex items-center gap-[13px] h-[54px] px-[18px] rounded-[15px] active:scale-95 transition-all duration-200" style={{ background: "#0159c7", border: "2.5px solid rgba(18,108,248,0.5)" }}>
                     <Image src="/icons/google-play.png" alt="Google Play" width={20} height={20} className="object-contain shrink-0" />
                     <div className="flex flex-col items-start">
                       <span className="font-medium text-[12px] text-white leading-[1.4]">Download on</span>
                       <span className="font-bold text-[15px] text-white leading-[1.3]">Google Play</span>
                     </div>
-                  </button>
-                  <button type="button" className="flex items-center gap-[13px] h-[54px] px-[18px] rounded-[15px] border border-[#e5e5e5] bg-white active:scale-95 transition-all duration-200">
+                  </a>
+                  <a href="#" className="flex items-center gap-[13px] h-[54px] px-[18px] rounded-[15px] border border-[#e5e5e5] bg-white active:scale-95 transition-all duration-200">
                     <Image src="/icons/apple-logo.png" alt="App Store" width={20} height={20} className="object-contain shrink-0" />
                     <div className="flex flex-col items-start">
                       <span className="font-medium text-[12px] text-[#191919] leading-[1.4]">Download on</span>
                       <span className="font-bold text-[15px] text-[#191919] leading-[1.3]">Apple Store</span>
                     </div>
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -479,11 +484,6 @@ export default function HomeClient() {
 
         </div>
 
-        {/* White blur fade at bottom of hero */}
-        <div
-          className="absolute bottom-0 left-0 right-0 pointer-events-none"
-          style={{ height: 80, background: "linear-gradient(to bottom, transparent, white)" }}
-        />
       </section>
 
       {/* ════════════════ 2. STATS ════════════════ */}
@@ -529,7 +529,7 @@ export default function HomeClient() {
               Sell Your Gift Cards in 3 Simple Steps
             </h2>
             <p className="font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.7] max-w-[600px]">
-              Getting paid for your gift cards has never been easier. With CardCentrals, you can complete the entire process in just a few steps — fast, secure, and hassle-free.
+              Getting paid for your gift cards has never been easier. With Cardcentrals, you can complete the entire process in just a few steps — fast, secure, and hassle-free.
             </p>
           </div>
 
@@ -583,7 +583,7 @@ export default function HomeClient() {
                 We Accept a Wide Range of Gift Cards
               </h2>
               <p className="font-medium text-[#525252] text-[18px] leading-[1.8]">
-                Trade your gift cards with confidence. CardCentrals supports a variety of popular and high-demand gift cards at competitive rates.
+                Trade your gift cards with confidence. Cardcentrals supports a variety of popular and high-demand gift cards at competitive rates.
               </p>
             </div>
 
@@ -621,7 +621,7 @@ export default function HomeClient() {
                 We Accept a Wide Range of Gift Cards
               </h2>
               <p className="font-medium text-[#525252] text-[15px] sm:text-[16px] leading-[1.8]">
-                Trade your gift cards with confidence. CardCentrals supports a variety of popular and high-demand gift cards at competitive rates.
+                Trade your gift cards with confidence. Cardcentrals supports a variety of popular and high-demand gift cards at competitive rates.
               </p>
             </div>
 
@@ -650,7 +650,7 @@ export default function HomeClient() {
               What Our Users Are Saying
             </h2>
             <p className="font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.7] max-w-[500px]">
-              Hear from our users who trust CardCentrals for fast, secure, and reliable gift card transactions.
+              Hear from our users who trust Cardcentrals for fast, secure, and reliable gift card transactions.
             </p>
           </div>
 
@@ -701,7 +701,7 @@ export default function HomeClient() {
               <br />Questions
             </h2>
             <p className="font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.7]">
-              Got questions about how CardCentrals works? We&apos;ve answered the most common
+              Got questions about how Cardcentrals works? We&apos;ve answered the most common
               questions to help you understand our platform, process, and how to get started
               quickly and safely.
             </p>

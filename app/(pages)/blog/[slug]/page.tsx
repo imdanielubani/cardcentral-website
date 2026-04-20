@@ -13,7 +13,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: "How to Sell Gift Cards Safely in Nigeria (2026 Guide)",
     paragraphs: [
       "Selling gift cards in Nigeria has become increasingly popular, but it's important to do it safely. With many platforms available, knowing how to avoid scams and get the best value is key.",
-      "First, always use a trusted platform like CardCentrals. A reliable platform ensures your gift cards are verified properly and payments are processed quickly.",
+      "First, always use a trusted platform like Cardcentrals. A reliable platform ensures your gift cards are verified properly and payments are processed quickly.",
       "Second, never share your gift card details with random individuals online. Many scammers pose as buyers and disappear after receiving your code.",
       "Third, always check the current rate before trading. Rates can change depending on demand, so it's important to trade at the right time.",
       "Finally, make sure you provide accurate details when submitting your gift card to avoid delays in payment.",
@@ -28,10 +28,10 @@ const BLOG_POSTS: BlogPost[] = [
     paragraphs: [
       "In today's fast-paced world, convenience is everything — and nowhere is that more true than in the gift card trading space. Mobile apps have completely transformed how Nigerians convert gift cards into cash.",
       "The biggest advantage of mobile apps is speed. With a few taps, you can submit your gift card details, get a live rate, and receive payment directly into your bank account — all within minutes.",
-      "Security is another major benefit. Reputable apps like CardCentrals use encrypted connections and verified payment systems, so your transactions are protected from start to finish.",
+      "Security is another major benefit. Reputable apps like Cardcentrals use encrypted connections and verified payment systems, so your transactions are protected from start to finish.",
       "Mobile apps also offer round-the-clock availability. Unlike physical exchange bureaus, you can trade your gift cards at 2 AM on a Sunday if you need to — no queues, no waiting.",
       "Rate transparency is another win. Top apps show you live exchange rates so you always know what you're getting before you commit to a trade.",
-      "If you haven't already switched to a mobile app for your gift card trades, now is the time. Download CardCentrals and experience the fastest, safest way to cash out your gift cards.",
+      "If you haven't already switched to a mobile app for your gift card trades, now is the time. Download Cardcentrals and experience the fastest, safest way to cash out your gift cards.",
     ],
   },
 ];

@@ -127,7 +127,7 @@ function TestiCard({ card }: { card: ReviewCard }) {
 const COL1: ReviewCard[] = [
   {
     name: "Daniel Chukwuemeka", location: "Nigeria",
-    quote: "I've tried several platforms, but CardCentrals is by far the fastest. Got paid within minutes!",
+    quote: "I've tried several platforms, but Cardcentrals is by far the fastest. Got paid within minutes!",
     bg: "#f3f3f4",
   },
   {

@@ -60,7 +60,7 @@ export default function FaqPage() {
             className="animate-fade-up anim-delay-200 font-medium text-[#525252] text-[15px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[580px] xl:max-w-[662px]"
             style={{ lineHeight: "1.7" }}
           >
-            Got questions about how CardCentrals works? We&apos;ve answered the most common
+            Got questions about how Cardcentrals works? We&apos;ve answered the most common
             questions to help you understand our platform, process, and how to get started
             quickly and safely.
           </p>
