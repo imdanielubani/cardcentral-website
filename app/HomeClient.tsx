@@ -26,9 +26,11 @@ function Stars() {
   return (
     <div className="flex gap-[4px]">
       {[0, 1, 2, 3, 4].map((i) => (
-        <svg key={i} width="20" height="20" viewBox="0 0 20 20" fill="#f59e0b">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
+        <div key={i} className="relative size-[28px] flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFB545">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
+        </div>
       ))}
     </div>
   );
@@ -38,9 +40,9 @@ function Stars() {
 function Badge({ text }: { text: string }) {
   return (
     <div
-      className="inline-flex items-center justify-center h-[38px] px-[17px] rounded-full border-2"
+      className="inline-flex items-center justify-center h-[38px] px-[35px] rounded-full border-2"
       style={{
-        background: "linear-gradient(to right, rgba(1,89,199,0.08), rgba(18,108,248,0.08))",
+        background: "rgba(1,89,199,0.08)",
         borderColor: "rgba(1,89,199,0.2)",
       }}
     >
@@ -79,12 +81,12 @@ const STEPS = [
 
 /* ── Gift cards ── */
 const GIFTCARDS = [
-  { img: "/images/googlecard.png", alt: "Google Play" },
-  { img: "/images/streamcard.png", alt: "Steam" },
-  { img: "/images/amazoncard.png", alt: "Amazon" },
-  { img: "/images/itunecard.png", alt: "iTunes" },
-  { img: "/images/xboxcard.png", alt: "Xbox" },
-  { img: "/images/walmartcard.png", alt: "Walmart" },
+  { image: "/icons/googlecard.png", alt: "Google Play" },
+  { image: "/icons/streamcard.png", alt: "Steam" },
+  { image: "/icons/amazoncard.png", alt: "Amazon" },
+  { image: "/icons/itunecard.png", alt: "iTunes" },
+  { image: "/icons/xboxcard.png", alt: "Xbox" },
+  { image: "/icons/walmartcard.png", alt: "Walmart" },
 ];
 
 /* ── Testimonial types & data ── */
@@ -92,7 +94,6 @@ interface Review {
   name: string;
   location: string;
   quote: string;
-  avatar: string;
   bg: string;
   tall?: boolean;
   showLogo?: boolean;
@@ -101,44 +102,44 @@ interface Review {
 const COL1: Review[] = [
   {
     name: "Daniel Chukwuemeka", location: "Nigeria",
-    quote: "\"I've tried several platforms, but CardCentrals is by far the fastest. Got paid within minutes!\"",
-    avatar: "/images/testi-daniel.jpg", bg: "#f3f3f4",
+    quote: "I've tried several platforms, but CardCentrals is by far the fastest. Got paid within minutes!",
+    bg: "#f3f3f4",
   },
   {
     name: "Grace Oluwatoyin", location: "Nigeria",
-    quote: "\"The rates are really good compared to others. Plus, the app is very easy to use.\"",
-    avatar: "/images/testi-grace.jpg", bg: "#0159c7", tall: true, showLogo: true,
+    quote: "The rates are really good compared to others. Plus, the app is very easy to use.",
+    bg: "#0159c7", tall: true, showLogo: true,
   },
 ];
 
 const COL2: Review[] = [
   {
     name: "Aisha Zainab", location: "Nigeria",
-    quote: "\"Super smooth experience! No stress, no delays just fast payment.\"",
-    avatar: "/images/testi-aisha.jpg", bg: "#f3f3f4",
+    quote: "Super smooth experience! No stress, no delays — just fast payment.",
+    bg: "#f3f3f4",
   },
   {
     name: "Michael Emeka", location: "Nigeria",
-    quote: "\"I was honestly scared at first, but after my first transaction, I knew this platform is legit.\"",
-    avatar: "/images/testi-michael.jpg", bg: "#126cf8",
+    quote: "I was honestly scared at first, but after my first transaction, I knew this platform is legit.",
+    bg: "#126cf8",
   },
   {
     name: "Chinedu Obinna", location: "Web designer",
-    quote: "\"Customer support is very responsive. They helped me through my first trade.\"",
-    avatar: "/images/testi-chinedu.jpg", bg: "#f3f3f4",
+    quote: "Customer support is very responsive. They helped me through my first trade.",
+    bg: "#f3f3f4",
   },
 ];
 
 const COL3: Review[] = [
   {
     name: "Ibrahim Sadiq", location: "Nigeria",
-    quote: "\"I like how transparent everything is. The rate you see is exactly what you get.\"",
-    avatar: "/images/testi-ibrahim.jpg", bg: "#126cf8", tall: true, showLogo: true,
+    quote: "I like how transparent everything is. The rate you see is exactly what you get.",
+    bg: "#126cf8", tall: true, showLogo: true,
   },
   {
     name: "Blessing Chioma", location: "Nigeria",
-    quote: "\"This is my go-to app for selling gift cards now. Reliable and efficient every time.\"",
-    avatar: "/images/testi-blessing.jpg", bg: "#f3f3f4",
+    quote: "This is my go-to app for selling gift cards now. Reliable and efficient every time.",
+    bg: "#f3f3f4",
   },
 ];
 
@@ -149,12 +150,19 @@ function TestiCard({ card }: { card: Review }) {
       className={`rounded-[20px] p-[25px] flex flex-col gap-[20px] ${card.tall ? "h-[560px] justify-between" : ""}`}
       style={{ backgroundColor: card.bg }}
     >
+      {/* Top: initial circle + name */}
       <div
-        className="flex items-center gap-[10px] rounded-[12px] p-[10px]"
+        className="flex items-center gap-[12px] rounded-[12px] p-[10px]"
         style={{ background: isBlue ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.04)" }}
       >
-        <div className="relative shrink-0 size-[61px] rounded-[52px] overflow-hidden">
-          <Image src={card.avatar} alt={card.name} fill className="object-cover" sizes="61px" />
+        <div
+          className="shrink-0 size-[61px] rounded-full flex items-center justify-center font-bold text-[22px] leading-none"
+          style={isBlue
+            ? { background: "rgba(255,255,255,0.2)", color: "#ffffff" }
+            : { background: "rgba(1,89,199,0.12)", color: "#0159c7" }
+          }
+        >
+          {card.name.charAt(0)}
         </div>
         <div>
           <p className={`font-medium text-[18px] leading-[1.3] ${isBlue ? "text-white" : "text-[#191919]"}`}>
@@ -166,12 +174,15 @@ function TestiCard({ card }: { card: Review }) {
         </div>
       </div>
 
-      <p className={`font-normal text-[16px] leading-[1.75] ${isBlue ? "text-white/90" : "text-[#525252]"}`}>
-        {card.quote}
-      </p>
-
+      {/* Stars */}
       <Stars />
 
+      {/* Quote */}
+      <p className={`font-medium text-[15px] sm:text-[16px] leading-[1.8] ${isBlue ? "text-white/90" : "text-[#525252]"}`}>
+        &ldquo;{card.quote}&rdquo;
+      </p>
+
+      {/* Logo — only on tall blue cards */}
       {card.showLogo && (
         <div className="mt-auto">
           <Image src="/images/iconlogo 1.png" alt="Cardcentrals" width={33} height={33} className="object-contain" />
@@ -255,7 +266,7 @@ export default function HomeClient() {
         className="relative overflow-hidden"
         style={{
           marginTop: -95,
-          backgroundImage: "linear-gradient(-32.42deg, rgb(255,255,255) 60%, rgba(166,201,255,0.15) 100%)",
+          backgroundImage: "linear-gradient(-53.56deg, rgb(255,255,255) 60%, rgba(166,201,255,0.15) 100%)",
         }}
       >
         {/* Dot-grid overlay */}
@@ -264,59 +275,80 @@ export default function HomeClient() {
           style={{
             backgroundImage: "url('/images/herobgsection.png')",
             backgroundSize: "cover",
-            backgroundPosition: "left top",
+            backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             mixBlendMode: "multiply",
-            opacity: 100,
           }}
         />
 
-        <div className="relative max-w-[1440px] mx-auto px-5 sm:px-8 xl:px-[100px] pt-[160px] sm:pt-[150px] xl:pt-[220px] pb-[60px] sm:pb-[80px] xl:pb-[100px]">
-          <div className="flex flex-col xl:flex-row items-center xl:items-start gap-10 xl:gap-0">
+        <div className="relative max-w-[1440px] mx-auto px-5 sm:px-8 xl:px-[100px]">
 
-            {/* ── Left column ── */}
-            <div className="flex flex-col gap-[20px] xl:gap-[22px] max-w-[620px] w-full xl:pt-[40px] xl:flex-shrink-0">
+          {/* ── Badge ── */}
+          <div className="pt-[160px] sm:pt-[160px] xl:pt-[220px]">
+            <div
+              className="animate-fade-up inline-flex items-center gap-[8px] h-[37px] px-[16px] rounded-full border w-fit"
+              style={{
+                background: "linear-gradient(to right, rgba(1,89,199,0.1), rgba(18,108,248,0.1))",
+                borderColor: "rgba(1,89,199,0.2)",
+              }}
+            >
+              <span className="size-[8px] rounded-full bg-[#22c55e] shrink-0" />
+              <span className="font-semibold text-[13px] text-[#126cf8] tracking-[0.26px]">
+                Trusted by 50,000+ Users
+              </span>
+            </div>
+          </div>
 
-              {/* Trusted badge */}
-              <div
-                className="animate-fade-up inline-flex items-center gap-[8px] h-[37px] px-[16px] rounded-full border w-fit"
-                style={{
-                  background: "linear-gradient(to right, rgba(1,89,199,0.1), rgba(18,108,248,0.1))",
-                  borderColor: "rgba(1,89,199,0.2)",
-                }}
-              >
-                <span className="size-[8px] rounded-full bg-[#22c55e] shrink-0" />
-                <span className="font-semibold text-[13px] text-[#126cf8] tracking-[0.26px]">
-                  Trusted by 50,000+ Users
-                </span>
+          {/* ── H1 heading (shared mobile + desktop) ── */}
+          <h1
+            className="animate-fade-up anim-delay-100 font-extrabold text-[#191919] uppercase leading-[0.95] tracking-[-0.02em] mt-[18px] sm:mt-[20px]"
+            style={{ fontSize: "clamp(38px, 7.5vw, 108px)" }}
+          >
+            Sell Your Gift Cards
+          </h1>
+
+          {/* ── Mobile / Tablet (< xl): stacked ── */}
+          <div className="xl:hidden">
+            <h1
+              className="font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right mt-[4px]"
+              style={{
+                fontSize: "clamp(38px, 7.5vw, 108px)",
+                backgroundImage: "linear-gradient(90deg, #0159c7 0%, #3c8eff 100%)",
+              }}
+            >
+              Instantly
+            </h1>
+
+            <div className="flex flex-col items-center gap-[24px] sm:gap-[28px] mt-[28px] pb-[60px] sm:pb-[80px]">
+              {/* Phone */}
+              <div className="relative w-full max-w-[380px] sm:max-w-[460px]">
+                <div className="relative w-full aspect-[585/756]">
+                  <Image
+                    src="/images/Hero 1.png"
+                    alt="Cardcentrals app"
+                    fill
+                    priority
+                    sizes="(max-width:640px) 90vw, 460px"
+                    className="object-contain"
+                  />
+                </div>
+                {/* Card 2 — Payment Sent (tablet only) */}
+                <div className="hidden sm:block absolute left-[-10px] top-[18%]">
+                  <Image src="/images/Card 2.png" alt="Payment Sent" width={175} height={66} className="object-contain" />
+                </div>
+                {/* Card 1 — iTunes rate (tablet only) */}
+                <div className="hidden sm:block absolute right-[-10px] bottom-[28%]">
+                  <Image src="/images/Card 1.png" alt="iTunes rate up" width={160} height={40} className="object-contain" />
+                </div>
               </div>
 
-              {/* Heading */}
-              <div className="animate-fade-up anim-delay-100">
-                <h1
-                  className="font-extrabold text-[#191919] uppercase leading-[1.05] tracking-[-0.02em]"
-                  style={{ fontSize: "clamp(36px, 6vw, 90px)" }}
-                >
-                  Sell Your Gift Cards
-                </h1>
-                <h1
-                  className="font-extrabold uppercase leading-[1.05] tracking-[-0.02em] bg-clip-text text-transparent"
-                  style={{
-                    fontSize: "clamp(36px, 6vw, 90px)",
-                    backgroundImage: "linear-gradient(90deg, #0159c7 0%, #3b8fff 100%)",
-                  }}
-                >
-                  Instantly
-                </h1>
-              </div>
-
-              {/* Subtitle */}
-              <p className="animate-fade-up anim-delay-200 font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.8] max-w-[540px]">
+              {/* Description */}
+              <p className="animate-fade-up anim-delay-200 font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.8] text-center max-w-[520px]">
                 Turn your unused gift cards into cash in minutes. Safe, secure, and trusted by hundreds of users.
               </p>
 
               {/* Feature pills */}
-              <div className="animate-fade-up anim-delay-300 flex flex-wrap gap-[10px] sm:gap-[12px]">
+              <div className="animate-fade-up anim-delay-300 flex flex-wrap justify-center gap-[10px]">
                 {[
                   { icon: "/icons/sli1.png", label: "Fast Payments" },
                   { icon: "/icons/sli2.png", label: "Best Market Rates" },
@@ -333,28 +365,15 @@ export default function HomeClient() {
               </div>
 
               {/* Download buttons */}
-              <div className="animate-fade-up anim-delay-400 flex flex-wrap gap-[12px] sm:gap-[14px]">
-                {/* Google Play */}
-                <button
-                  type="button"
-                  className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] active:scale-95 transition-all duration-200"
-                  style={{
-                    background: "#0159c7",
-                    border: "2.5px solid rgba(18,108,248,0.5)",
-                  }}
-                >
+              <div className="animate-fade-up anim-delay-400 flex flex-wrap justify-center gap-[12px]">
+                <button type="button" className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] active:scale-95 transition-all duration-200" style={{ background: "#0159c7", border: "2.5px solid rgba(18,108,248,0.5)" }}>
                   <Image src="/icons/google-play.png" alt="Google Play" width={20} height={20} className="object-contain shrink-0" />
                   <div className="flex flex-col items-start">
                     <span className="font-medium text-[12px] text-white leading-[1.4]">Download on</span>
                     <span className="font-bold text-[16px] text-white leading-[1.3]">Google Play</span>
                   </div>
                 </button>
-
-                {/* Apple */}
-                <button
-                  type="button"
-                  className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] border border-[#e5e5e5] bg-white active:scale-95 transition-all duration-200"
-                >
+                <button type="button" className="flex items-center gap-[13px] h-[54px] px-[20px] rounded-[15px] border border-[#e5e5e5] bg-white active:scale-95 transition-all duration-200">
                   <Image src="/icons/apple-logo.png" alt="App Store" width={20} height={20} className="object-contain shrink-0" />
                   <div className="flex flex-col items-start">
                     <span className="font-medium text-[12px] text-[#191919] leading-[1.4]">Download on</span>
@@ -363,48 +382,108 @@ export default function HomeClient() {
                 </button>
               </div>
             </div>
+          </div>
 
-            {/* ── Right column — phone mockup ── */}
-            <div className="relative w-full xl:flex-1 flex justify-center xl:justify-end">
-              <div className="relative w-full max-w-[500px] xl:max-w-none xl:w-[585px]">
-                {/* Phone */}
-                <div className="relative w-full aspect-[585/756]">
-                  <Image
-                    src="/images/Hero.jpg"
-                    alt="Cardcentrals app"
-                    fill
-                    priority
-                    sizes="(max-width:640px) 90vw, (max-width:1280px) 50vw, 585px"
-                    className="object-contain"
-                  />
-                </div>
+          {/* ── Desktop (xl+) ── */}
+          <div className="hidden xl:block">
 
-                {/* Floating card — Payment Sent */}
-                <div className="hidden xl:flex absolute left-[-110px] top-[28%] bg-white rounded-[16px] shadow-[0px_25px_50px_0px_rgba(0,0,0,0.2)] px-[20px] pt-[16px] pb-[14px] w-[191px] gap-[12px] items-center">
-                  <div className="shrink-0 size-[40px] rounded-full flex items-center justify-center" style={{ background: "rgba(34,197,94,0.1)" }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path d="M9 12l2 2 4-4" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <circle cx="12" cy="12" r="10" stroke="#22c55e" strokeWidth="2"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-bold text-[13px] text-[#272936] leading-[1.4]">Payment Sent!</p>
-                    <p className="font-normal text-[12px] text-[#6b7280] leading-[1.4]">₦85,000 credited</p>
-                  </div>
-                </div>
-
-                {/* Floating card — iTunes rate */}
-                <div className="hidden xl:flex absolute right-[-80px] bottom-[30%] items-center gap-[8px] h-[44px] px-[16px] rounded-[16px]" style={{ background: "#1e2030", border: "0.8px solid rgba(18,108,248,0.2)" }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 17L17 7M17 7H7M17 7v10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <span className="font-medium text-[12px] text-white/70">iTunes rate up</span>
-                  <span className="font-bold text-[12px] text-[#22c55e]">+5%</span>
+            {/* Row: subtitle (left ~49%) + INSTANTLY (right flex-1) */}
+            <div className="flex items-start gap-[40px] mt-[22px]">
+              {/* Left: subtitle + pills */}
+              <div className="flex flex-col gap-[20px]" style={{ width: "49%" }}>
+                <p className="font-normal text-[#525252] text-[16px] leading-[1.8]">
+                  Turn your unused gift cards into cash in minutes. Safe, secure, and trusted by hundreds of users.
+                </p>
+                <div className="flex flex-wrap gap-[10px]">
+                  {[
+                    { icon: "/icons/sli1.png", label: "Fast Payments" },
+                    { icon: "/icons/sli2.png", label: "Best Market Rates" },
+                    { icon: "/icons/sli3.png", label: "100% Secure Transactions" },
+                  ].map((f) => (
+                    <div
+                      key={f.label}
+                      className="flex items-center gap-[5px] h-[32px] px-[10px] rounded-[12px] border border-[#e5e5e5] bg-[rgba(255,255,255,0.04)]"
+                    >
+                      <Image src={f.icon} alt={f.label} width={16} height={16} className="object-contain shrink-0" />
+                      <span className="font-medium text-[13px] text-[#191919] whitespace-nowrap">{f.label}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
+
+              {/* Right: INSTANTLY */}
+              <div className="flex-1 flex justify-end">
+                <h1
+                  className="font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right"
+                  style={{
+                    fontSize: "clamp(38px, 7.5vw, 108px)",
+                    backgroundImage: "linear-gradient(90deg, #0159c7 0%, #3c8eff 100%)",
+                  }}
+                >
+                  Instantly
+                </h1>
+              </div>
+            </div>
+
+            {/* Phone section: all elements absolutely positioned */}
+            <div className="relative mt-[32px]" style={{ minHeight: 836 }}>
+
+              {/* Phone image */}
+              <div className="absolute" style={{ left: 284, top: 0, width: 585, height: 756 }}>
+                <Image
+                  src="/images/Hero 1.png"
+                  alt="Cardcentrals app"
+                  fill
+                  priority
+                  sizes="585px"
+                  className="object-contain"
+                />
+              </div>
+
+              {/* Card 2 — Payment Sent (white card, left of phone) */}
+              <div className="absolute" style={{ left: 240, top: 127 }}>
+                <Image src="/images/Card 2.png" alt="Payment Sent" width={191} height={72} className="object-contain" />
+              </div>
+
+              {/* Card 1 — iTunes rate (dark card, right side of phone) */}
+              <div className="absolute" style={{ left: 646, top: 399 }}>
+                <Image src="/images/Card 1.png" alt="iTunes rate up" width={175} height={44} className="object-contain" />
+              </div>
+
+              {/* Description + download buttons (right side) */}
+              <div className="absolute right-0 top-0 flex flex-col gap-[24px]" style={{ width: 409 }}>
+                <p className="font-medium text-[#525252] text-[16px] leading-[1.7]">
+                  Turn your gift cards into instant cash at unbeatable rates.{" "}
+                  Download the CardCentrals app and start earning now.
+                </p>
+                <div className="flex gap-[13px]">
+                  <button type="button" className="flex items-center gap-[13px] h-[54px] px-[18px] rounded-[15px] active:scale-95 transition-all duration-200" style={{ background: "#0159c7", border: "2.5px solid rgba(18,108,248,0.5)" }}>
+                    <Image src="/icons/google-play.png" alt="Google Play" width={20} height={20} className="object-contain shrink-0" />
+                    <div className="flex flex-col items-start">
+                      <span className="font-medium text-[12px] text-white leading-[1.4]">Download on</span>
+                      <span className="font-bold text-[15px] text-white leading-[1.3]">Google Play</span>
+                    </div>
+                  </button>
+                  <button type="button" className="flex items-center gap-[13px] h-[54px] px-[18px] rounded-[15px] border border-[#e5e5e5] bg-white active:scale-95 transition-all duration-200">
+                    <Image src="/icons/apple-logo.png" alt="App Store" width={20} height={20} className="object-contain shrink-0" />
+                    <div className="flex flex-col items-start">
+                      <span className="font-medium text-[12px] text-[#191919] leading-[1.4]">Download on</span>
+                      <span className="font-bold text-[15px] text-[#191919] leading-[1.3]">Apple Store</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
             </div>
           </div>
+
         </div>
+
+        {/* White blur fade at bottom of hero */}
+        <div
+          className="absolute bottom-0 left-0 right-0 pointer-events-none"
+          style={{ height: 80, background: "linear-gradient(to bottom, transparent, white)" }}
+        />
       </section>
 
       {/* ════════════════ 2. STATS ════════════════ */}
@@ -510,24 +589,24 @@ export default function HomeClient() {
 
             {/* Left floating cards */}
             <div className="absolute left-0 top-[45%] -translate-y-1/2">
-              <CardIcon img="/images/googlecard.png" alt="Google Play" />
+              <CardIcon image="/icons/googlecard.png" alt="Google Play" />
             </div>
             <div className="absolute left-[125px] top-[8%]">
-              <CardIcon img="/images/streamcard.png" alt="Steam" />
+              <CardIcon image="/icons/streamcard.png" alt="Steam" />
             </div>
             <div className="absolute left-[125px] bottom-[8%]">
-              <CardIcon img="/images/amazoncard.png" alt="Amazon" />
+              <CardIcon image="/icons/amazoncard.png" alt="Amazon" />
             </div>
 
             {/* Right floating cards */}
             <div className="absolute right-0 top-[45%] -translate-y-1/2">
-              <CardIcon img="/images/walmartcard.png" alt="Walmart" />
+              <CardIcon image="/icons/walmartcard.png" alt="Walmart" />
             </div>
             <div className="absolute right-[125px] top-[8%]">
-              <CardIcon img="/images/itunecard.png" alt="iTunes" />
+              <CardIcon image="/icons/itunecard.png" alt="iTunes" />
             </div>
             <div className="absolute right-[125px] bottom-[8%]">
-              <CardIcon img="/images/xboxcard.png" alt="Xbox" />
+              <CardIcon image="/icons/xboxcard.png" alt="Xbox" />
             </div>
           </div>
 
@@ -548,7 +627,7 @@ export default function HomeClient() {
 
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-[12px] sm:gap-[16px]">
               {GIFTCARDS.map((c) => (
-                <CardIcon key={c.alt} img={c.img} alt={c.alt} />
+                <CardIcon key={c.alt} image={c.image} alt={c.alt} />
               ))}
             </div>
           </div>
@@ -609,10 +688,10 @@ export default function HomeClient() {
       <section className="px-4 sm:px-8 xl:px-[100px] py-[60px] sm:py-[80px] xl:py-[100px]">
         <div
           ref={faqRef.ref}
-          className={`reveal${faqRef.visible ? " visible" : ""} max-w-[1240px] mx-auto grid grid-cols-1 xl:grid-cols-[1fr_1fr] gap-[50px] xl:gap-[80px] items-start`}
+          className={`reveal${faqRef.visible ? " visible" : ""} max-w-[1240px] mx-auto grid grid-cols-1 xl:grid-cols-[608fr_632fr] gap-[50px] xl:gap-[80px] items-start`}
         >
-          {/* Left — heading */}
-          <div className="flex flex-col gap-[18px]">
+          {/* Left — heading + Still Have Questions card */}
+          <div className="flex flex-col gap-[18px] sm:gap-[22px]">
             <Badge text="FAQs" />
             <h2
               className="font-extrabold text-[#191919] tracking-[-0.02em] leading-[1.2]"
@@ -621,22 +700,44 @@ export default function HomeClient() {
               Frequently Asked
               <br />Questions
             </h2>
-            <p className="font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.7] max-w-[520px]">
-              Got questions about how CardCentrals works? We&apos;ve answered the most common questions to help you understand our platform, process, and how to get started quickly and safely.
+            <p className="font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.7]">
+              Got questions about how CardCentrals works? We&apos;ve answered the most common
+              questions to help you understand our platform, process, and how to get started
+              quickly and safely.
             </p>
-            <div className="flex flex-wrap gap-[12px] mt-[8px]">
-              <Link
-                href="/faq"
-                className="inline-flex items-center justify-center h-[50px] px-[28px] rounded-[12px] bg-[#0159c7] text-white font-bold text-[15px] hover:opacity-90 active:scale-95 transition-all duration-200"
-              >
-                View All FAQs
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[50px] px-[28px] rounded-[12px] border border-[#e5e5e5] bg-white text-[#191919] font-bold text-[15px] hover:bg-[#f5f5f5] active:scale-95 transition-all duration-200"
-              >
-                Contact Us
-              </Link>
+
+            {/* Still Have Questions? blue card */}
+            <div
+              className="rounded-[25px] p-[39px] flex flex-col gap-[14px] mt-[6px]"
+              style={{
+                background: "#0159c7",
+                border: "2.5px solid rgba(18,108,248,0.5)",
+              }}
+            >
+              <h3 className="font-bold text-white text-[24px] leading-[1.275]">
+                Still Have Questions?
+              </h3>
+              <p className="font-normal text-[rgba(255,255,255,0.8)] text-[16px] leading-[1.7]">
+                Can&apos;t find the answer you&apos;re looking for? Our support team is always
+                ready to help you. Reach out to us anytime and we&apos;ll respond as quickly
+                as possible.
+              </p>
+              <div className="flex flex-wrap gap-[14px] mt-[4px]">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center h-[45px] px-[20px] rounded-[10px] border-2 border-[#e5e5e5] bg-white text-[#191919] font-bold text-[14px] hover:opacity-90 active:scale-95 transition-all duration-200 whitespace-nowrap"
+                >
+                  Contact Us
+                </Link>
+                <Link
+                  href="https://wa.me/2348108993922"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center h-[45px] px-[20px] rounded-[10px] border-2 border-[#e5e5e5] bg-white text-[#191919] font-bold text-[14px] hover:opacity-90 active:scale-95 transition-all duration-200 whitespace-nowrap"
+                >
+                  Chat on WhatsApp
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -658,15 +759,8 @@ export default function HomeClient() {
 }
 
 /* ── Gift card icon tile ── */
-function CardIcon({ img, alt }: { img: string; alt: string }) {
+function CardIcon({ image, alt }: { image: string; alt: string }) {
   return (
-    <div
-      className="relative size-[88px] rounded-[24px] bg-white overflow-hidden shadow-[0px_5px_30px_0px_rgba(166,201,255,0.3)]"
-      style={{ border: "2px solid rgba(18,108,248,0.3)" }}
-    >
-      <div className="absolute inset-[17px]">
-        <Image src={img} alt={alt} fill className="object-contain" sizes="54px" />
-      </div>
-    </div>
+    <Image src={image} alt={alt} width={130} height={130} className="object-contain" priority />
   );
 }
