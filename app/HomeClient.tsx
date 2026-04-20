@@ -302,7 +302,7 @@ export default function HomeClient() {
           {/* ── H1 heading (shared mobile + desktop) ── */}
           <h1
             className="animate-fade-up anim-delay-100 font-extrabold text-[#191919] uppercase leading-[0.95] tracking-[-0.02em] mt-[18px] sm:mt-[20px] xl:mt-[10px]"
-            style={{ fontSize: "clamp(36px, 7.5vw, 108px)" }}
+            style={{ fontSize: "clamp(33px, 7.5vw, 108px)" }}
           >
             Sell Your Gift Cards
           </h1>
@@ -312,7 +312,7 @@ export default function HomeClient() {
             <h1
               className="animate-fade-up font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right mt-[4px]"
               style={{
-                fontSize: "clamp(36px, 7.5vw, 108px)",
+                fontSize: "clamp(33px, 7.5vw, 108px)",
                 backgroundImage: "linear-gradient(90deg, #0159c7 0%, #3c8eff 100%)",
               }}
             >
@@ -421,7 +421,7 @@ export default function HomeClient() {
                 <h1
                   className="animate-fade-up font-extrabold uppercase leading-[0.95] tracking-[-0.02em] bg-clip-text text-transparent text-right"
                   style={{
-                    fontSize: "clamp(36px, 7.5vw, 108px)",
+                    fontSize: "clamp(33px, 7.5vw, 108px)",
                     backgroundImage: "linear-gradient(90deg, #0159c7 0%, #3c8eff 100%)",
                   }}
                 >

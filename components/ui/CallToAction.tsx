@@ -114,70 +114,65 @@ export default function CallToAction() {
         </div>
 
         {/* ── Mobile / tablet layout (below xl) ── */}
-        <div className="xl:hidden flex flex-col gap-6 px-6 sm:px-10 pt-10 pb-10">
+        <div className="xl:hidden flex flex-col items-center text-center gap-[24px] sm:gap-[28px] px-5 sm:px-10 pt-10 sm:pt-14 pb-10 sm:pb-14">
 
-          <div className="flex flex-col">
-            <span className="font-bold text-white text-[32px] sm:text-[40px] leading-tight">
+          {/* Heading */}
+          <div className="flex flex-col gap-[2px]">
+            <span className="font-bold text-white text-[28px] sm:text-[36px] md:text-[42px] leading-[1.2]">
               Stop Letting Your Gift Cards
             </span>
             <span
-              className="font-bold text-[#126cf8] text-[32px] sm:text-[40px] leading-tight underline decoration-[#126cf8] decoration-solid"
+              className="font-bold text-[#126cf8] text-[28px] sm:text-[36px] md:text-[42px] leading-[1.2] underline decoration-[#126cf8] decoration-solid"
               style={{ textDecorationThickness: "11%" }}
             >
               Go to Waste
             </span>
           </div>
 
-          <p className="font-medium text-[16px] leading-[27.2px] text-white max-w-[491px]">
-            Convert them to cash instantly with the best rates and lightning-fast
-            payments&nbsp; on all from your phone.
+          {/* Description */}
+          <p className="font-medium text-[14px] sm:text-[16px] leading-[1.7] text-white/90 max-w-[460px]">
+            Convert them to cash instantly with the best rates and lightning-fast payments on all from your phone.
           </p>
 
-          <div className="flex flex-wrap gap-3">
+          {/* Download buttons — flex-wrap so they stack on very small screens */}
+          <div className="flex flex-wrap justify-center gap-[12px] w-full">
+            {/* Google Play */}
             <a
               href="#"
-              className="relative flex items-center bg-[#0159c7] rounded-[15px] hover:opacity-90 transition-opacity"
-              style={{
-                width: 176.86,
-                height: 53.59,
-                border: "5px solid rgba(18,108,248,0.5)",
-              }}
+              className="flex items-center gap-[12px] h-[54px] px-[18px] rounded-[15px] hover:opacity-90 active:scale-95 transition-all duration-200 shrink-0"
+              style={{ background: "#0159c7", border: "2.5px solid rgba(18,108,248,0.5)" }}
             >
-              <div className="absolute size-[20px]" style={{ left: 22.5, top: 16 }}>
+              <div className="relative shrink-0 size-[20px]">
                 <Image src="/icons/google-play.png" alt="" fill sizes="20px" className="object-contain" />
               </div>
-              <div className="absolute flex flex-col items-start" style={{ left: 55.5, top: 5 }}>
-                <p className="font-medium text-[12px] leading-[18px] text-white whitespace-nowrap">Download on</p>
-                <p className="font-bold text-[16px] leading-[18px] text-white whitespace-nowrap">Google Play</p>
+              <div className="flex flex-col items-start">
+                <span className="font-medium text-[11px] sm:text-[12px] text-white leading-[1.4]">Download on</span>
+                <span className="font-bold text-[15px] sm:text-[16px] text-white leading-[1.3]">Google Play</span>
               </div>
             </a>
+
+            {/* App Store */}
             <a
               href="#"
-              className="relative flex items-center bg-white border-[5px] border-[#e5e5e5] rounded-[15px] hover:bg-gray-50 transition-colors"
-              style={{ width: 176.86, height: 53.59 }}
+              className="flex items-center gap-[12px] h-[54px] px-[18px] rounded-[15px] bg-white border border-[#e5e5e5] hover:bg-gray-50 active:scale-95 transition-all duration-200 shrink-0"
             >
-              <div
-                className="absolute flex gap-[13px] items-center"
-                style={{ left: 23.64, top: "50%", transform: "translateY(-50%)" }}
-              >
-                <div className="relative shrink-0 size-[20px]">
-                  <Image src="/icons/apple-logo.png" alt="Apple" fill sizes="20px" className="object-contain" />
-                </div>
-                <div className="flex flex-col items-start">
-                  <p className="font-medium text-[12px] leading-[18px] text-[#191919] whitespace-nowrap">Download on</p>
-                  <p className="font-bold text-[16px] leading-[18px] text-[#191919] whitespace-nowrap">Apple Play</p>
-                </div>
+              <div className="relative shrink-0 size-[20px]">
+                <Image src="/icons/apple-logo.png" alt="" fill sizes="20px" className="object-contain" />
+              </div>
+              <div className="flex flex-col items-start">
+                <span className="font-medium text-[11px] sm:text-[12px] text-[#191919] leading-[1.4]">Download on</span>
+                <span className="font-bold text-[15px] sm:text-[16px] text-[#191919] leading-[1.3]">Apple Store</span>
               </div>
             </a>
           </div>
 
-          {/* Phone mockup on mobile */}
-          <div className="relative mx-auto" style={{ width: 280, height: 340 }}>
+          {/* Phone mockup */}
+          <div className="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] aspect-[333/404]">
             <Image
               src="/images/calltoaction.png"
               alt="Cardcentrals app on phone"
               fill
-              sizes="280px"
+              sizes="(max-width:640px) 260px, (max-width:768px) 300px, 340px"
               className="object-contain"
             />
           </div>
