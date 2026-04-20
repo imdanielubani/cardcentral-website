@@ -1,4 +1,4 @@
-name: Deploy to Server
+name: Deploy Next.js App
 
 on:
   push:
@@ -29,4 +29,4 @@ jobs:
             git pull origin main
             npm install
             npm run build
-            pm2 restart all || true
+            pm2 restart website || pm2 start npm --name "cardcentrals-website" -- start
