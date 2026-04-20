@@ -24,7 +24,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd /var/www/your-project
+            cd /var/www/website
             git pull origin main
             npm install   # remove if not Node.js
             npm run build # remove if not needed
