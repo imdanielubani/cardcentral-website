@@ -39,16 +39,18 @@ function Stars() {
 /* ── Section badge ── */
 function Badge({ text }: { text: string }) {
   return (
-    <div
-      className="inline-flex self-start items-center justify-center h-[38px] px-[17px] rounded-full border-2"
-      style={{
-        background: "rgba(1,89,199,0.08)",
-        borderColor: "rgba(1,89,199,0.2)",
-      }}
-    >
-      <span className="font-semibold text-[12px] text-[#0159c7] tracking-[0.48px] leading-[18px]">
-        {text}
-      </span>
+    <div className="w-full flex justify-center">
+      <div
+        className="flex items-center justify-center h-[38px] px-[17px] rounded-full border-2"
+        style={{
+          background: "rgba(1,89,199,0.08)",
+          borderColor: "rgba(1,89,199,0.2)",
+        }}
+      >
+        <span className="font-semibold text-[12px] text-[#0159c7] tracking-[0.48px] leading-[18px] whitespace-nowrap">
+          {text}
+        </span>
+      </div>
     </div>
   );
 }
@@ -691,8 +693,19 @@ export default function HomeClient() {
           className={`reveal${faqRef.visible ? " visible" : ""} max-w-[1240px] mx-auto grid grid-cols-1 xl:grid-cols-[608fr_632fr] gap-[50px] xl:gap-[80px] items-start`}
         >
           {/* Left — heading + Still Have Questions card */}
-          <div className="flex flex-col gap-[18px] sm:gap-[22px]">
-            <Badge text="FAQs" />
+          <div className="flex flex-col items-start gap-[18px] sm:gap-[22px]">
+            {/* FAQ badge — left-aligned only on home page */}
+            <div
+              className="flex items-center justify-center h-[38px] px-[17px] rounded-full border-2 w-fit"
+              style={{
+                background: "rgba(1,89,199,0.08)",
+                borderColor: "rgba(1,89,199,0.2)",
+              }}
+            >
+              <span className="font-semibold text-[12px] text-[#0159c7] tracking-[0.48px] leading-[18px] whitespace-nowrap">
+                FAQs
+              </span>
+            </div>
             <h2
               className="font-extrabold text-[#191919] tracking-[-0.02em] leading-[1.2]"
               style={{ fontSize: "clamp(32px, 4vw, 50px)" }}
