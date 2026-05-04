@@ -51,7 +51,7 @@ export async function POST(req: Request) {
 
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_TO_EMAIL ?? "support@cardcentrals.com";
-  const from = process.env.CONTACT_FROM_EMAIL ?? "Cardcentrals <onboarding@resend.dev>";
+  const from = process.env.CONTACT_FROM_EMAIL ?? "Cardcentrals <noreply@cardcentrals.com>";
 
   if (!apiKey) {
     return NextResponse.json(
