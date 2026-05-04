@@ -35,3 +35,4 @@ jobs:
             npm run build
             
             pm2 reload cardcentrals-website || pm2 start npm --name "cardcentrals-website" -- start
+            pm2 save
