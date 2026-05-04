@@ -114,15 +114,15 @@ export default function CallToAction() {
         </div>
 
         {/* ── Mobile / tablet layout (below xl) ── */}
-        <div className="xl:hidden flex flex-col items-center text-center gap-[24px] sm:gap-[28px] px-5 sm:px-10 pt-10 sm:pt-14 pb-10 sm:pb-14">
+        <div className="xl:hidden flex flex-col items-center text-center gap-[22px] sm:gap-[28px] px-5 sm:px-10 pt-10 sm:pt-14">
 
           {/* Heading */}
           <div className="flex flex-col gap-[2px]">
-            <span className="font-bold text-white text-[28px] sm:text-[36px] md:text-[42px] leading-[1.2]">
+            <span className="font-bold text-white text-[26px] sm:text-[36px] md:text-[42px] leading-[1.2]">
               Stop Letting Your Gift Cards
             </span>
             <span
-              className="font-bold text-[#126cf8] text-[28px] sm:text-[36px] md:text-[42px] leading-[1.2] underline decoration-[#126cf8] decoration-solid"
+              className="font-bold text-[#126cf8] text-[26px] sm:text-[36px] md:text-[42px] leading-[1.2] underline decoration-[#126cf8] decoration-solid"
               style={{ textDecorationThickness: "11%" }}
             >
               Go to Waste
@@ -166,14 +166,14 @@ export default function CallToAction() {
             </a>
           </div>
 
-          {/* Phone mockup */}
-          <div className="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] aspect-[333/404]">
+          {/* Phone mockup — flush to the bottom edge of the dark card */}
+          <div className="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[400px] aspect-[333/404] mt-2 sm:mt-4">
             <Image
               src="/images/calltoaction.png"
               alt="Cardcentrals app on phone"
               fill
-              sizes="(max-width:640px) 260px, (max-width:768px) 300px, 340px"
-              className="object-contain"
+              sizes="(max-width:640px) 280px, (max-width:768px) 340px, 400px"
+              className="object-contain object-bottom"
             />
           </div>
 
