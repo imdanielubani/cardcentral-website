@@ -40,7 +40,7 @@ function Stars() {
 function Badge({ text }: { text: string }) {
   return (
     <div
-      className="inline-flex items-center justify-center h-[38px] px-[35px] rounded-full border-2"
+      className="inline-flex self-start items-center justify-center h-[38px] px-[17px] rounded-full border-2"
       style={{
         background: "rgba(1,89,199,0.08)",
         borderColor: "rgba(1,89,199,0.2)",
@@ -700,7 +700,7 @@ export default function HomeClient() {
               Frequently Asked
               <br />Questions
             </h2>
-            <p className="font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.7]">
+            <p className="font-normal text-[#525252] text-[15px] sm:text-[16px] leading-[1.7] max-w-[546px]">
               Got questions about how Cardcentrals works? We&apos;ve answered the most common
               questions to help you understand our platform, process, and how to get started
               quickly and safely.
@@ -708,24 +708,24 @@ export default function HomeClient() {
 
             {/* Still Have Questions? blue card */}
             <div
-              className="rounded-[25px] p-[39px] flex flex-col gap-[14px] mt-[6px]"
+              className="rounded-[20px] sm:rounded-[25px] p-6 sm:p-[39px] flex flex-col gap-[14px] mt-2 sm:mt-4"
               style={{
                 background: "#0159c7",
                 border: "2.5px solid rgba(18,108,248,0.5)",
               }}
             >
-              <h3 className="font-bold text-white text-[24px] leading-[1.275]">
+              <h3 className="font-bold text-white text-[20px] sm:text-[24px] leading-[1.275]">
                 Still Have Questions?
               </h3>
-              <p className="font-normal text-[rgba(255,255,255,0.8)] text-[16px] leading-[1.7]">
+              <p className="font-normal text-[rgba(255,255,255,0.8)] text-[15px] sm:text-[16px] leading-[1.6]">
                 Can&apos;t find the answer you&apos;re looking for? Our support team is always
                 ready to help you. Reach out to us anytime and we&apos;ll respond as quickly
                 as possible.
               </p>
-              <div className="flex flex-wrap gap-[14px] mt-[4px]">
+              <div className="flex flex-wrap gap-[12px] sm:gap-[14px] mt-1">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center h-[45px] px-[20px] rounded-[10px] border-2 border-[#e5e5e5] bg-white text-[#191919] font-bold text-[14px] hover:opacity-90 active:scale-95 transition-all duration-200 whitespace-nowrap"
+                  className="inline-flex items-center justify-center h-[42px] sm:h-[45px] px-[18px] sm:px-[20px] rounded-[10px] border-2 border-[#e5e5e5] bg-white text-[#191919] font-bold text-[13px] sm:text-[14px] hover:opacity-90 active:scale-95 transition-all duration-200 whitespace-nowrap"
                 >
                   Contact Us
                 </Link>
@@ -733,7 +733,7 @@ export default function HomeClient() {
                   href="https://wa.me/2348108993922"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-[45px] px-[20px] rounded-[10px] border-2 border-[#e5e5e5] bg-white text-[#191919] font-bold text-[14px] hover:opacity-90 active:scale-95 transition-all duration-200 whitespace-nowrap"
+                  className="inline-flex items-center justify-center h-[42px] sm:h-[45px] px-[18px] sm:px-[20px] rounded-[10px] border-2 border-[#e5e5e5] bg-white text-[#191919] font-bold text-[13px] sm:text-[14px] hover:opacity-90 active:scale-95 transition-all duration-200 whitespace-nowrap"
                 >
                   Chat on WhatsApp
                 </Link>

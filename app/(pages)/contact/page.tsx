@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CallToAction from "@/components/ui/CallToAction";
+import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main>
-      <h1>Contact Us</h1>
+      <ContactClient />
       <CallToAction />
     </main>
   );
