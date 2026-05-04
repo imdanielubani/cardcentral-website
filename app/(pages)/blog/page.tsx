@@ -7,7 +7,30 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Read the latest articles, tips, and guides from Cardcentrals on gift cards, exchange rates, and more.",
+    "Read the latest articles, tips, and guides from Cardcentrals on gift cards, exchange rates, and trading safely.",
+  keywords: [
+    "Cardcentrals blog",
+    "gift card tips",
+    "gift card guides",
+    "trade gift cards safely",
+    "gift card news",
+  ],
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Latest News & Articles | Cardcentrals Blog",
+    description:
+      "Articles on gift card trends, tips, and trading with confidence.",
+    url: "/blog",
+    type: "website",
+    images: [{ url: "/images/blog11.png", width: 1200, height: 630, alt: "Cardcentrals Blog" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Latest News & Articles | Cardcentrals Blog",
+    description:
+      "Articles on gift card trends, tips, and trading with confidence.",
+    images: ["/images/blog11.png"],
+  },
 };
 
 export default function BlogPage() {

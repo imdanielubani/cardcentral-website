@@ -5,7 +5,29 @@ import FaqAccordion from "@/components/ui/FaqAccordion";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Find answers to frequently asked questions about selling gift cards on Cardcentrals.",
+    "Find answers to frequently asked questions about selling gift cards on Cardcentrals — rates, payouts, security, and more.",
+  keywords: [
+    "Cardcentrals FAQ",
+    "gift card questions",
+    "how to sell gift cards",
+    "Cardcentrals help",
+  ],
+  alternates: { canonical: "/faq" },
+  openGraph: {
+    title: "Frequently Asked Questions | Cardcentrals",
+    description:
+      "Answers to common questions about selling gift cards on Cardcentrals.",
+    url: "/faq",
+    type: "website",
+    images: [{ url: "/images/Hero.jpg", width: 1200, height: 630, alt: "Cardcentrals FAQ" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frequently Asked Questions | Cardcentrals",
+    description:
+      "Answers to common questions about selling gift cards on Cardcentrals.",
+    images: ["/images/Hero.jpg"],
+  },
 };
 
 export default function FaqPage() {

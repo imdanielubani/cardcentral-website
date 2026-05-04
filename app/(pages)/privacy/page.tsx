@@ -6,6 +6,29 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Read the Cardcentrals Privacy Policy to understand how we collect, use, and protect your personal information.",
+  keywords: [
+    "Cardcentrals privacy",
+    "privacy policy",
+    "data protection",
+    "personal information",
+  ],
+  alternates: { canonical: "/privacy" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "Privacy Policy | Cardcentrals",
+    description:
+      "How Cardcentrals collects, uses, and protects your personal information.",
+    url: "/privacy",
+    type: "article",
+    images: [{ url: "/images/Hero.jpg", width: 1200, height: 630, alt: "Cardcentrals Privacy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Cardcentrals",
+    description:
+      "How Cardcentrals collects, uses, and protects your personal information.",
+    images: ["/images/Hero.jpg"],
+  },
 };
 
 export default function PrivacyPage() {

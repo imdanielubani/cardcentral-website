@@ -6,6 +6,29 @@ export const metadata: Metadata = {
   title: "Terms and Conditions",
   description:
     "Read the Cardcentrals Terms and Conditions to understand the rules and guidelines for using our platform.",
+  keywords: [
+    "Cardcentrals terms",
+    "terms and conditions",
+    "user agreement",
+    "platform rules",
+  ],
+  alternates: { canonical: "/terms" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "Terms and Conditions | Cardcentrals",
+    description:
+      "The rules and guidelines for using the Cardcentrals platform.",
+    url: "/terms",
+    type: "article",
+    images: [{ url: "/images/Hero.jpg", width: 1200, height: 630, alt: "Cardcentrals Terms" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms and Conditions | Cardcentrals",
+    description:
+      "The rules and guidelines for using the Cardcentrals platform.",
+    images: ["/images/Hero.jpg"],
+  },
 };
 
 export default function TermsPage() {
