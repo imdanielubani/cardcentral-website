@@ -37,9 +37,9 @@ function Stars() {
 }
 
 /* ── Section badge ── */
-function Badge({ text }: { text: string }) {
+function Badge({ text, align = "center" }: { text: string; align?: "center" | "start" }) {
   return (
-    <div className="w-full flex justify-center">
+    <div className={`w-full flex ${align === "center" ? "justify-center" : "justify-start"}`}>
       <div
         className="flex items-center justify-center h-[38px] px-[17px] rounded-full border-2"
         style={{
@@ -694,18 +694,7 @@ export default function HomeClient() {
         >
           {/* Left — heading + Still Have Questions card */}
           <div className="flex flex-col items-start gap-[18px] sm:gap-[22px]">
-            {/* FAQ badge — left-aligned only on home page */}
-            <div
-              className="flex items-center justify-center h-[38px] px-[17px] rounded-full border-2 w-fit"
-              style={{
-                background: "rgba(1,89,199,0.08)",
-                borderColor: "rgba(1,89,199,0.2)",
-              }}
-            >
-              <span className="font-semibold text-[12px] text-[#0159c7] tracking-[0.48px] leading-[18px] whitespace-nowrap">
-                FAQs
-              </span>
-            </div>
+            <Badge text="FAQs" align="start" />
             <h2
               className="font-extrabold text-[#191919] tracking-[-0.02em] leading-[1.2]"
               style={{ fontSize: "clamp(32px, 4vw, 50px)" }}

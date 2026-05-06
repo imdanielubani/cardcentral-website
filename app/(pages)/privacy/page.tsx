@@ -89,9 +89,17 @@ export default function PrivacyPage() {
             className="animate-fade-up anim-delay-300 font-medium text-[#525252] text-[15px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[700px] xl:max-w-[900px]"
             style={{ lineHeight: "1.7" }}
           >
-            Welcome to Cardcentrals. Your privacy is important to us, and we are committed to
-            protecting your personal information. This Privacy Policy explains how we collect,
-            use, and safeguard your data when you use our website and mobile application.
+            Welcome to Cardcentrals. Your privacy is important to us, and we are committed to protecting your personal information. 
+            This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website.
+      
+          </p>
+
+          <p
+            className="animate-fade-up anim-delay-300 font-medium text-[#525252] text-[15px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[700px] xl:max-w-[900px]"
+            style={{ lineHeight: "1.7" }}
+          >
+            By using Cardcentrals, you agree to the terms of this Privacy Policy.
+      
           </p>
 
         </div>

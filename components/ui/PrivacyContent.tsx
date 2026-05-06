@@ -14,22 +14,21 @@ const SECTIONS = [
           <li>Full name</li>
           <li>Email address</li>
           <li>Phone number</li>
-          <li>Payment details</li>
         </ul>
 
         <p className="privacy-subheading">b. Transaction Information</p>
         <ul>
-          <li>Gift card details submitted</li>
+          <li>Gift card details submitted by users</li>
           <li>Transaction history</li>
-          <li>Payment records</li>
+          <li>Payment and payout records</li>
         </ul>
 
         <p className="privacy-subheading">c. Device &amp; Usage Information</p>
         <ul>
           <li>IP address</li>
-          <li>Device type</li>
-          <li>Browser type</li>
-          <li>App usage data</li>
+          <li>Device type and operating system</li>
+          <li>App usage data and interactions</li>
+          <li>Log data (such as access times and pages viewed)</li>
         </ul>
       </>
     ),
@@ -40,26 +39,26 @@ const SECTIONS = [
       <>
         <p>We use your information to:</p>
         <ul>
+          <li>Create and manage user accounts</li>
           <li>Process and complete transactions</li>
           <li>Verify submitted gift cards</li>
           <li>Send transaction updates and notifications</li>
-          <li>Improve our services and user experience</li>
-          <li>Prevent fraud and ensure platform security</li>
           <li>Provide customer support</li>
+          <li>Improve app performance and user experience</li>
+          <li>Monitor and prevent fraud, abuse, or illegal activities</li>
+          <li>Comply with legal and regulatory obligations</li>
         </ul>
       </>
     ),
   },
   {
-    heading: "How We Protect Your Information",
+    heading: "Payment Processing",
     content: (
       <>
-        <p>We implement strong security measures to protect your data, including:</p>
-        <ul>
-          <li>Secure servers and encryption</li>
-          <li>Restricted access to personal data</li>
-          <li>Continuous monitoring for suspicious activity</li>
-        </ul>
+        <p>Cardcentrals does not store sensitive financial information such as debit/credit card numbers.</p>
+        <p>All payments are processed securely through trusted third-party payment providers. 
+        These providers handle your payment information in accordance with their own privacy policies and security standards.
+        </p>
       </>
     ),
   },
@@ -72,9 +71,42 @@ const SECTIONS = [
         </p>
         <ul>
           <li>Payment processors to complete transactions</li>
-          <li>Legal authorities when required by law</li>
-          <li>Service providers who help operate our platform</li>
+          <li>Service providers that help operate our platform (e.g., hosting, analytics)</li>
+          <li>Fraud prevention and security partners</li>
+          <li>Legal authorities, when required by law or to protect our rights</li>
         </ul>
+        <p>
+         All third parties are required to protect your data and use it only for the intended purpose.
+        </p>
+      </>
+    ),
+  },
+  {
+    heading: "Data Retention",
+    content: (
+      <>
+        <p>We retain your personal information only for as long as necessary to:</p>
+        <ul>
+          <li>Provide our services</li>
+          <li>Maintain transaction records</li>
+          <li>Comply with legal and regulatory requirements</li>
+        </ul>
+        <p>When your data is no longer required, we securely delete or anonymize it.</p>
+      </>
+    ),
+  },
+  {
+    heading: "Data Security",
+    content: (
+      <>
+        <p>We implement industry-standard security measures to protect your information, including:</p>
+        <ul>
+          <li>Data encryption</li>
+          <li>Secure servers</li>
+          <li>Access controls and authentication</li>
+          <li>Continuous monitoring for suspicious activities</li>
+        </ul>
+        <p>While we strive to protect your data, no system is 100% secure.</p>
       </>
     ),
   },
@@ -82,66 +114,99 @@ const SECTIONS = [
     heading: "Cookies & Tracking Technologies",
     content: (
       <>
-        <p>Our website may use cookies to:</p>
+        <p>Our website may use cookies and similar technologies to:</p>
         <ul>
-          <li>Improve user experience</li>
-          <li>Analyze website traffic</li>
+          <li>Enhance user experience</li>
+          <li>Analyze traffic and usage patterns</li>
           <li>Remember user preferences</li>
         </ul>
-        <p>You can disable cookies in your browser settings if you prefer.</p>
+        <p>You can control or disable cookies through your browser settings.</p>
       </>
     ),
   },
   {
-    heading: "Third-Party Services",
-    content: (
+  heading: "Third-Party Services",
+  content: (
+    <>
       <p>
-        Our platform may contain links to third-party services. We are not responsible for the
-        privacy practices of those external platforms.
+        Cardcentrals may contain links to third-party websites or services.
       </p>
-    ),
-  },
-  {
+      <p>
+        We are not responsible for the privacy practices or content of those external platforms. 
+        We encourage users to review their privacy policies.
+      </p>
+    </>
+  ),
+},
+{
     heading: "Your Rights",
     content: (
       <>
-        <p>You have the right to:</p>
+        <p>Depending on applicable laws, you have the right to:</p>
         <ul>
           <li>Access your personal data</li>
           <li>Request correction of inaccurate information</li>
-          <li>Request deletion of your data (where applicable)</li>
+          <li>Request deletion of your data</li>
+          <li>Object to or restrict certain processing</li>
         </ul>
-        <p>To make any requests, please contact us using the details below.</p>
+        <p>To exercise any of these rights, please contact us using the details below.</p>
       </>
     ),
   },
   {
     heading: "Children's Privacy",
     content: (
+       <>
       <p>
-        Cardcentrals does not knowingly collect personal information from individuals under the
-        age of 18. If we become aware of such data, it will be deleted immediately.
+        Cardcentrals is not intended for individuals under the age of 18.
+      </p>
+       <p>
+        We do not knowingly collect personal information from children. 
+        If such data is identified, it will be deleted promptly.
+      </p>
+      </>
+    ),
+  },
+  {
+    heading: "Legal Compliance",
+    content: (
+      <p>
+        We comply with applicable data protection laws, 
+        including the Nigerian Data Protection Act (NDPA) and other relevant regulations.
       </p>
     ),
   },
   {
     heading: "Changes to This Policy",
     content: (
+      <>
       <p>
-        We may update this Privacy Policy from time to time. Any changes will be posted on this
-        page with an updated date.
+        We may update this Privacy Policy from time to time.
       </p>
+       <p>
+        Any changes will be posted on this page with an updated effective date. 
+        Continued use of the platform means you accept the updated policy.
+      </p>
+      </>
     ),
   },
   {
     heading: "Contact Us",
     content: (
       <>
-        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
         <ul>
           <li>Email: support@Cardcentrals.com</li>
           <li>WhatsApp: +(234) 810-899-3922</li>
         </ul>
+      </>
+    ),
+  },
+  {
+    heading: "",
+    content: (
+      <>
+        <p>Cardcentrals is committed to protecting your privacy and ensuring transparency in how your data is handled.</p>
       </>
     ),
   },
