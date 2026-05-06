@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const SECTIONS = [
   {
-    heading: "Information Collection and Use",
+    heading: "1. Information We Collect",
     content: (
       <>
         <p>We may collect the following types of information:</p>
@@ -34,7 +34,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "How We Use Your Information",
+    heading: "2. How We Use Your Information",
     content: (
       <>
         <p>We use your information to:</p>
@@ -52,7 +52,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Payment Processing",
+    heading: "3.Payment Processing",
     content: (
       <>
         <p>Cardcentrals does not store sensitive financial information such as debit/credit card numbers.</p>
@@ -63,7 +63,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Sharing of Information",
+    heading: "4. Sharing of Information",
     content: (
       <>
         <p>
@@ -82,7 +82,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Data Retention",
+    heading: "5. Data Retention",
     content: (
       <>
         <p>We retain your personal information only for as long as necessary to:</p>
@@ -96,7 +96,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Data Security",
+    heading: "6. Data Security",
     content: (
       <>
         <p>We implement industry-standard security measures to protect your information, including:</p>
@@ -111,7 +111,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Cookies & Tracking Technologies",
+    heading: "7. Cookies & Tracking Technologies",
     content: (
       <>
         <p>Our website may use cookies and similar technologies to:</p>
@@ -125,7 +125,7 @@ const SECTIONS = [
     ),
   },
   {
-  heading: "Third-Party Services",
+  heading: "8. Third-Party Services",
   content: (
     <>
       <p>
@@ -139,7 +139,7 @@ const SECTIONS = [
   ),
 },
 {
-    heading: "Your Rights",
+    heading: "9. Your Rights",
     content: (
       <>
         <p>Depending on applicable laws, you have the right to:</p>
@@ -154,7 +154,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Children's Privacy",
+    heading: "10. Children's Privacy",
     content: (
        <>
       <p>
@@ -168,7 +168,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Legal Compliance",
+    heading: "11. Legal Compliance",
     content: (
       <p>
         We comply with applicable data protection laws, 
@@ -177,7 +177,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Changes to This Policy",
+    heading: "12. Changes to This Policy",
     content: (
       <>
       <p>
@@ -191,7 +191,7 @@ const SECTIONS = [
     ),
   },
   {
-    heading: "Contact Us",
+    heading: "13. Contact Us",
     content: (
       <>
         <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
